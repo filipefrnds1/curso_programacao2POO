@@ -2,9 +2,9 @@ package entitiess;
 
 public class Product {
 	
-	public String name;
-	public double price;
-	public int quantity;
+	private String name;
+	private double price;
+	private int quantity;
 	
 	public Product() { //Obs: se você criar construtores, você pode criar um construtor padrão
 						//para caso você instancie um objeto, não seja obrigado a passar os parâmetros.
@@ -21,6 +21,27 @@ public class Product {
 	public Product(String name, double price) {
 		this.name = name;
 		this.price = price;
+	}
+	
+	public double getPrice() {
+		return price;
+	}
+	
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public double getQuantity(double quantity) {
+		return quantity;
 	}
 	
 	public double totalValueInStock() {
