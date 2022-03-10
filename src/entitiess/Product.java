@@ -6,10 +6,21 @@ public class Product {
 	public double price;
 	public int quantity;
 	
+	public Product() { //Obs: se você criar construtores, você pode criar um construtor padrão
+						//para caso você instancie um objeto, não seja obrigado a passar os parâmetros.
+		
+		
+	}
+	
 	public Product(String name, double price, int quantity) {
 		this.name = name;
 		this.price = price;
 		this.quantity = quantity;
+	}
+	
+	public Product(String name, double price) {
+		this.name = name;
+		this.price = price;
 	}
 	
 	public double totalValueInStock() {
