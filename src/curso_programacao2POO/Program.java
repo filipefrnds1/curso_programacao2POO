@@ -24,14 +24,13 @@ public class Program {
 		System.out.print("Quantity: ");
 		prod.quantity = sc.nextInt();
 		
-		System.out.println("Product data: " + prod.name + ", $ " + prod.price +
-				", " + prod.quantity + "units, Total: $ " + prod.totalValueInStock());
+		System.out.println("Product data: " + prod);
 		
 		System.out.print("Enter the new number of products to be added in stock: ");
 			int num1 = sc.nextInt();
 			prod.addProducts(num1);
 			
-		System.out.println(prod);
+		System.out.println("Update data: " + prod);
 		//System.out.println("Product data: " + prod.name + ", $ " + prod.price +
 		//		", " + prod.quantity + "units, Total: $ " + prod.totalValueInStock());
 		
@@ -39,7 +38,7 @@ public class Program {
 			int num2 = sc.nextInt();
 			prod.removeProducts(num2);
 		
-		System.out.println(prod);
+		System.out.println("Update data: " + prod);
 		//System.out.println("Product data: " + prod.name + ", $ " + prod.price +
 		//		", " + prod.quantity + "units, Total: $ " + prod.totalValueInStock());
 		
